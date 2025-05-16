@@ -1,0 +1,108 @@
+/* Reset básico */
+@font-face {
+    font-family: 'Giliant';
+    src: url('fonts/Giliant.otf') format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+} 
+
+body {
+font-family: 'Giliant', sans-serif;
+  background-color: #ffffff;
+  color: #352626;
+  line-height: 1.6;
+}
+
+.titulopr{
+    font-family: 'Giliant';
+    font-size: 3.5rem;              /* Tamaño grande */
+    color: #ffffff;               /* Dorado oscuro elegante */
+    text-align: center;           /* Centrado en pantalla */
+    margin-top: 30px;
+    letter-spacing: 10px;          /* Espaciado entre letras */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);  /* Sombra suave */
+}
+
+
+/* Header */
+header {
+  background-color: #55051c;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  letter-spacing: 3px; 
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* Catálogo */
+.catalogo {
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.producto {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.1); 
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.producto p {
+  font-size: 1.1em;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.producto img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #55051c;
+}
+
+footer {
+  background-color: #55051c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
