@@ -78,7 +78,7 @@ nav ul li a {
 
 .producto p {
   font-size: 1.1em;
-  height: 60px;
+  height: 100px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
