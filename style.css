@@ -21,7 +21,7 @@ font-family: 'Giliant', sans-serif;
 .titulopr{
     font-family: 'Giliant';
     font-size: 3.5rem;              /* Tamaño grande */
-    color: #ffffff;               /* Dorado oscuro elegante */
+    color: #ffffff;               
     text-align: center;           /* Centrado en pantalla */
     margin-top: 30px;
     letter-spacing: 10px;          /* Espaciado entre letras */
@@ -31,10 +31,13 @@ font-family: 'Giliant', sans-serif;
 
 /* Header */
 header {
+  font-size: 3.5rem;              /* Tamaño grande */
   background-color: #55051c;
   color: rgb(255, 255, 255);
   padding: 30px;
   text-align: center;
+  letter-spacing: 10px;  
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);  /* Sombra suave */
 }
 
 nav ul {
@@ -102,7 +105,8 @@ footer {
   background-color: #55051c;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
   margin-top: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-size: 1.25em;
 }
