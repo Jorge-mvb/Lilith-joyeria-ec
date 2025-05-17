@@ -18,6 +18,7 @@ body {
 
 /* HEADER */
 
+/* Edite solo el diamante */
 .container-logo-diamante {
   font-family: 'Giliant';
   font-size: 2.5rem;             
@@ -27,6 +28,7 @@ body {
   text-align: center; 
 }
 
+/* titulo con font */
 .titulopr {
   font-family: 'Giliant';
   font-size: 2.5rem;
@@ -36,11 +38,13 @@ body {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* color header dimensionessss */
 header {
   background-color: #55051c;
   color: white;
   padding: 1px;
 }
+
 
 .container-menu {
   background-color: #3a0111;
@@ -55,6 +59,7 @@ header {
   position: relative;
 }
 
+/* dolor de cabeza, te amo chat gpt */
 #menu-toggle {
   display: none;
   font-size: 2rem;
@@ -141,6 +146,7 @@ header {
 
 /* BANNER */
 
+/* imagen lilith, dimensiones */
 .banner {
   background-image: linear-gradient(100deg, #000 ,#00000015), url('IMAGENES/mito-Lilith.jpg');
   height: 30rem;
@@ -148,6 +154,7 @@ header {
   background-position: center;
 }
 
+/* poder joyas */
 .content-banner {
   max-width: 90rem;
   margin: 0 auto;
