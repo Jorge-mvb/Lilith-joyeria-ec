@@ -1,9 +1,7 @@
-/* Reset básico */
 @font-face {
-    font-family: 'Giliant';
-    src: url('fonts/Giliant.otf') format('truetype');
+  font-family: 'Giliant';
+  src: url('fonts/Giliant.otf') format('truetype');
 }
-
 
 * {
   margin: 0;
@@ -12,84 +10,80 @@
 } 
 
 body {
-font-family: 'Giliant', sans-serif;
+  font-family: 'Giliant', sans-serif;
   background-color: #ffffff;
   color: #352626;
   line-height: 1.6;
 }
 
+/* HEADER */
 
-
-/* Header */ 
-
-/* Icono diamante */
-.container-logo-diamante{
+.container-logo-diamante {
   font-family: 'Giliant';
-    font-size: 2.5rem;             
-    margin-top: 30px;
-    letter-spacing: 10px;          
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-    text-align: center; 
+  font-size: 2.5rem;             
+  margin-top: 30px;
+  letter-spacing: 10px;          
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  text-align: center; 
 }
 
-/* Titulo con font */
-.titulopr{
-    font-family: 'Giliant';
-    font-size: 2.5rem;              /* Tamaño grande */
-    color: #ffffff;               
-    text-align: center;           /* Centrado en pantalla */
-    margin-top: 10px;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);  /* Sombra suave */
-}  
+.titulopr {
+  font-family: 'Giliant';
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
 
-/* Header color y tamanano */
 header {
   background-color: #55051c;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 1px;
 }
 
-/* Barra menu  que no sirve por ahora*/
-
-.container-menu{
+.container-menu {
   background-color: #3a0111;
   text-align: center;
-  
+  padding: 0.5rem;
 }
 
-.menu{
+.menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
+  position: relative;
 }
 
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+}
 
-
-.menues{
+.menues {
   display: flex;
   gap: 3rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.menues li{
   list-style: none;
-
+  margin-right: 1rem;
 }
 
-.menues a{
-  text-align: center;
+.menues li {
+  list-style: none;
+}
+
+.menues a {
   text-decoration: none;
   font-size: 1.25rem;
   color: #ffffff;          
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
   letter-spacing: 3px;
-
+  position: relative;
 }
 
-.menues a::after{
+.menues a::after {
   content: '';
   width: 1.5rem;
   height: 1px;
@@ -102,56 +96,84 @@ header {
   transition: all .3s ease;
 }
 
-.menues a:hover::after{
+.menues a:hover::after {
   opacity: 1;
 }
 
-.menues a:hover{
+.menues a:hover {
   color: #e26f6f;
 }
 
-/* BANNEEEEEEEEEEER */
+/* MENU RESPONSIVE */
 
-.banner{
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .menues {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #3a0111;
+    padding: 1rem 0;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+
+  .menues.show {
+    display: flex;
+  }
+
+  .menues a {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* BANNER */
+
+.banner {
   background-image: linear-gradient(100deg, #000 ,#00000015), url('IMAGENES/mito-Lilith.jpg');
   height: 30rem;
   background-size: cover;
   background-position: center;
-  
 }
 
-.content-banner{
+.content-banner {
   max-width: 90rem;
   margin: 0 auto;
   padding: 25rem 0;
-
 }
 
-.content-banner h2{
-  color:#fff;
+.content-banner h2 {
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 2px;
 }
 
+/* CATÁLOGO */
 
-
-/* Catálogo */
 .catalogo {
   font-family: 'Giliant';             
   margin-top: 10px;
   letter-spacing: 5px;          
   text-align: center; 
-
 }
 
 .producto {
   display: inline-block;
-  flex-direction: column;
-  justify-content: space-between;
   width: 300px;
-  height: auto;
   margin: 20px;
   padding: 20px;
   background-color: #fff;
@@ -184,14 +206,13 @@ header {
   color: #55051c;
 }
 
-/* FOOTER, TENER EN CUENTA QUE CADA ICONO TIENE UNA CLASE PARA PONERLE COLOR, PERO QUE PEREZA */
+/* FOOTER */
 
 footer {
   background-color: #55051c;
-  
 }
 
-.contact-info p{
+.contact-info p {
   color: white;
   text-align: center;
   padding: 30px;
@@ -201,19 +222,18 @@ footer {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.contact-info ul{
+.contact-info ul {
   display: flex;
   flex-direction: column;
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: px;
   letter-spacing: 1.25px;
   font-size: 1.25em;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.social-icons{
+.social-icons {
   color: white;
   text-align: center;
   padding: 10px;
@@ -223,39 +243,12 @@ footer {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.copi p{
+.copi p {
   color: white;
   text-align: center;
   padding: 1px;
   margin-top: 20px;
   letter-spacing: 1px;
   font-size: 1em;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7)
-  
-}
-
-
-/* celulares */
-
-@media (max-width: 768px) {
-  .menues {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .menu {
-    width: 100%;
-  }
-
-  .container-menu {
-    padding: 1rem 0;
-  }
-
-  .menues a {
-    display: block;
-    width: 100%;
-    font-size: 1.5rem;
-  }
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
