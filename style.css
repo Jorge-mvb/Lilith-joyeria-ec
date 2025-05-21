@@ -227,6 +227,7 @@ footer {
   letter-spacing: 1.25px;
   font-size: 1.75em;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
 
 .contact-info ul {
@@ -238,6 +239,7 @@ footer {
   letter-spacing: 1.25px;
   font-size: 1.25em;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
 
 .social-icons {
@@ -248,9 +250,11 @@ footer {
   letter-spacing: 10px;
   font-size: 1.75em;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
 
 .copi p {
+  text-decoration: none;
   color: white;
   text-align: center;
   padding: 1px;
